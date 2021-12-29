@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusive soft</title>
+    <link rel="short icon" href="./img/isoft.png">
+    <link rel="stylesheet" href="./css/notebook.lenovo.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navber"> 
+            <div class="content"> 
+                <ul class="menu-lie"> 
+                    <div class="icon cancel-berw"> 
+                        <i class="fa fa-times" aria-hidden="true"></i> 
+                    </div> 
+                    <li><a href="#home">Главная</a></li> 
+                    <li><a href="#Portfolio">Портфолио</a></li> 
+                    <li><a href="#Shop">Магазин</a></li> 
+                    <li><a href="#About-Us">О нас</a></li> 
+                    <li><a href="#blog">Блог</a></li> 
+                    <li><a href="#Service">Сервис</a></li> 
+                    <li><a href="#Contacts">Контакты</a></li>
+                </ul>  
+                <div class="icon menu-berw"> 
+                    <i class="fa fa-align-left" aria-hidden="true"></i> 
+                </div> 
+                <div class="logo">
+                    <div class="textlogo">
+                        <h4>isoft</h4>
+                        <p>The first inclusive IT company</p>
+                    </div>
+                    <a href="#"><img src="./img/isoft.png" alt=""></a>
+                </div> 
+            </div> 
+        </nav>
+    </header>
+
+    <section>
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="./img/НОУТБУК HP 255 G81.png" width="100%" 
+                    id="imagebox">
+                    <div class="small-img-row">
+                        <div class="samll-img-col">
+                            <img src="./img/НОУТБУК HP 255 G81.png"
+                            width="100%" onclick="clickimg(this)">
+                        </div>
+                        <div class="samll-img-col">
+                            <img src="./img/НОУТБУК HP 255 G82.png"
+                            width="100%" onclick="clickimg(this)">
+                        </div>
+                        <div class="samll-img-col">
+                            <img src="./img/НОУТБУК HP 255 G83.png"
+                            width="100%" onclick="clickimg(this)">
+                        </div>
+                        <div class="samll-img-col">
+                            <img src="./img/НОУТБУК HP 255 G84.png"
+                            width="100%" onclick="clickimg(this)">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="colll">
+                        <p>Модель: Lenovo</p>
+                        <h1>Ультрабук Lenovo ThinkPad X1 Yoga Gen 5 20UB0015US Intel</h1>
+                        <h2>78 090 сом</h2>
+                    </div>
+                    <div class="colll-one">
+                        <p>Доставка по Бишкеку 0-150 сом. КРУПНАЯ техника 300-500-1000 сом до подъезда, подъём опл-ся отдельно. Доставка товара по Кыргызстану, цена договорная.</p>
+                    </div>
+                    <div class="text-a">
+                        <button class="btn btn-primary" onclick="showModal1(1)">В купить один клык</button>
+                        <button class="btn btn-primary" onclick="showModal1(2)">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal modal-1">
+            <div class="modal-window">
+                <div class="modal-header">
+                    <div class="close"onclick="closeModal1(1)">&times;</div>
+                </div>
+                <div class="modal-body">
+                    <div class="voog">
+                        <img src="./img/1.jpg" alt="">
+                        <h2>Ультрабук Lenovo ThinkPad X1 Yoga Gen 5 20UB0015US Intel</h2>
+                        <p>78 090 сом</p>
+                    </div>
+                    <div class="goov">
+                        <h1>Заполните данные для заказа</h1>
+                        <div class="containerrrt">
+                            <form action="https://formspree.io/f/xeqnojjv" method="POST" enctype="multipart/form-data" id="my-form">
+                        
+                              <div class="form-group">
+                                <label for="firstName">Ваше имя</label>
+                                <input type="text" id="firstName" name="firstName">
+                              </div>
+                        
+                              <div class="form-group">
+                                <label for="latsName">Ваш телефон</label>
+                                <input type="text" id="lastName" name="lastName">
+                              </div>
+
+                              <div class="form-group">
+                                <label for="massage">Ваше сообщение</label>
+                                <textarea name="massage" id="massage" cols="10" rows="1"></textarea>
+                              </div>
+                        
+                              <button type="submit">Отправить</button>
+                            </form>
+                        </div>
+                        <div id="status"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modall modal-2">
+            <div class="modal-window">
+                <div class="modal-headerr">
+                    <h3 class="title">
+                        Товар добавлен в корзину
+                    </h3>
+                    <div class="close"onclick="closeModal1(2)">&times;</div>
+                </div>
+                <div class="modal-body">
+                    <div class="voog">
+                        <img src="./img/1.jpg">
+                    </div>
+                    <div class="goovv">
+                        <h2>Ультрабук Lenovo ThinkPad X1 Yoga Gen 5 20UB0015US Intel</h2>
+                        <p>78 090 сом\шт</p>
+                        <input type="number" value="1">
+                        <a class="btn" href="mail.html">Перейти в оформлению</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="contentBx">
+                <div class="label">Обзор</div>
+                <div class="contenttt">
+                    <h4>Реальная мощь</h4>
+                    <p>Благодаря процессору AMD Ryzen 7 (в максимальной комплектации) ноутбук IdeaPad S145 поможет вам решить любые задачи. Кроме того, предусмотрено несколько вариантов хранения данных, включая возможность использования двойного хранения данных - на твердотельном накопителе и на жёстком диске, что гарантирует минимальное время отклика и при этом даёт большой объём хранения данных.</p>
+                
+                    <h4>Откройте в себе страсть к путешествиям</h4>
+                    <p>Модель IdeaPad S145 весит всего 1,85кг и поэтому идеально подходит для путешествий. Узкая рамка делает дизайн более лаконичным и увеличивает видимую область экрана. Ноутбук представлен в разных цветах и выполнен из приятного на ощупь пластика и при этом продается по привлекательной цене.</p>
+
+                    <h4>Превосходный звук, отличное изображение</h4>
+                    <p>Независимо от того, смотрите ли вы видео, слушаете потоковую музыку или общаетесь в видеочате, вам непременно понравится звучание, которое обеспечивают динамики IdeaPad S145 с поддержкой технологии Dolby Audio™. Кроме того, вас также приятно удивит изображение на 15,6-дюймовом дисплее стандарта HD или FHD с антибликовым покрытием.</p>
+                </div>
+            </div>
+
+            <div class="contentBx">
+                <div class="label">Характеристики</div>
+                <div class="contenttt-one">
+
+                    <h2>Основные характеристики ноутбука Lenovo IdeaPad S145-15API (81UT0058RU)</h2>
+                    <div class="contt">
+                        <p>Страна</p>
+                        <p>Китай</p>
+                    </div>
+                    <div class="contt">
+                        <p>Гарантия производителя</p>
+                        <p>	1 год</p>
+                    </div>
+                    <h3 class="hara">ОСНОВНЫЕ ХАРАКТЕРИСТИКИ</h3>
+                    <div class="contt-one">
+                        <p>Тип</p>
+                        <p>Ноутбук</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Операционная система</p>
+                        <p>Windows 10</p>
+                    </div>
+
+                    <h3 class="hara">ЭКРАН</h3>
+                    <div class="contt-one">
+                        <p>Диагональ экрана</p>
+                        <p>15.6" </p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Разрешение экрана</p>
+                        <p>1920x1080 Пикс</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Максимальная частота обновления</p>
+                        <p>60 Гц</p>
+                    </div>
+
+                    <h3 class="hara">ПРОЦЕССОР</h3>
+                    <div class="contt-one">
+                        <p>Производитель процессора</p>
+                        <p>AMD</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Модель процессора</p>
+                        <p>Athlon 300U</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Тактовая частота</p>
+                        <p>2.4 ГГц</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Максимальная тактовая частота</p>
+                        <p>3.3 ГГц</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Количество ядер</p>
+                        <p>2</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Количество потоков</p>
+                        <p>4</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Кэш L2</p>
+                        <p>1 МБ</p>
+                    </div>
+
+                    <h3 class="hara">ОПЕРАТИВНАЯ ПАМЯТЬ</h3>
+                    <div class="contt-one">
+                        <p>Объем оперативной памяти</p>
+                        <p>4 ГБ</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Максимальный объем</p>
+                        <p>12 ГБ</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Количество слотов</p>
+                        <p>1</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Тип оперативной памяти</p>
+                        <p>DDR4</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Частота памяти</p>
+                        <p>2400 МГц</p>
+                    </div>
+
+                    <h3 class="hara">НАКОПИТЕЛЬ</h3>
+                    <div class="contt-one">
+                        <p>Тип накопителя</p>
+                        <p>SSD</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Объем накопителя</p>
+                        <p>256 ГБ</p>
+                    </div>
+
+                    <h3 class="hara">ГРАФИЧЕСКАЯ СИСТЕМА</h3>
+                    <div class="contt-one">
+                        <p>Тип видеокарты</p>
+                        <p>Интегрированная</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Производитель видеокарты</p>
+                        <p>AMD</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Модель видеокарты</p>
+                        <p>Radeon Vega 3</p>
+                    </div>
+
+                    <h3 class="hara">ОПТИЧЕСКИЙ ПРИВОД</h3>
+                    <div class="contt-one">
+                        <p>Тип оптического привода</p>
+                        <p>Отсутствует</p>
+                    </div>
+
+                    <h3 class="hara">ВСТРОЕННОЕ ОБОРУДОВАНИЕ</h3>
+                    <div class="contt-one">
+                        <p>Wi-Fi</p>
+                        <p>Есть</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Стандарт Wi-Fi</p>
+                        <p>IEEE 802.11ac, IEEE 802.11b, IEEE 802.11a, IEEE 802.11g, IEEE 802.11n</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Bluetooth</p>
+                        <p>Есть</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Версия Bluetooth</p>
+                        <p>4.1</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Микрофон</p>
+                        <p>Есть</p>
+                    </div>
+
+                    <h3 class="hara">ИНТЕРФЕЙСЫ</h3>
+                    <div class="contt-one">
+                        <p>HDMI</p>
+                        <p>Есть</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>USB</p>
+                        <p>3</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>USB 2.0</p>
+                        <p>1</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>USB 3.0</p>
+                        <p>2</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Разъем для наушников/микрофона</p>
+                        <p>Есть</p>
+                    </div>
+
+                    <h3 class="hara">ПИТАНИЕ</h3>
+                    <div class="contt-one">
+                        <p>Максимальное время работы</p>
+                        <p>4.5 ч</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Тип аккумулятора</p>
+                        <p>Li-Ion</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Емкость</p>
+                        <p>35 Вт*ч</p>
+                    </div>
+
+                    <h3 class="hara">ГАБАРИТЫ И ВЕС</h3>
+                    <div class="contt-one">
+                        <p>Высота</p>
+                        <p>1.99 см</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Ширина</p>
+                        <p>36.2 см</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Глубина</p>
+                        <p>25.1 см</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Вес</p>
+                        <p>1.85 кг</p>
+                    </div>
+                    <div class="contt-one">
+                        <p>Цвет</p>
+                        <p>Серый</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contentBx">
+                <div class="label">Отзывы</div>
+                <div class="contenttt-two">
+                    <div class="contw">
+                        <div class="cont-onee">
+                            <h4>Нурбек</h4>
+                            <p>г.Бишкек</p>
+                        </div>
+                        <div class="cont">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <p>Отличный ноутбук. В других магазинах с такими параметрами дороже стоит. А сдесь еще и со скидкой приобрел. Работает хорошо, быстро. шикарное разрешение и что очень хорошо так это SSd диск. Програмки просто летают.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contw">
+                        <div class="cont-onee">
+                            <h4>Юлия</h4>
+                            <p>г.Бишкек</p>
+                        </div>
+                        <div class="cont">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <p>Очень довольны покупкой. Внешний вид невероятно стильный. Тонкая рамка делает его изящнее по сравнению с аналогичными моделями с экраном в 15,6 дюймов. Интернет, ютуб, офисные программы просто «летают». Монитор радует красочным изображением. Звук очень приличный, не стали подключать дополнительные колонки. Считаем, что ноутбук стоит своих денег. Покупали осмысленно, пересмотрев разные обзоры. Эта модель входит в топ лучших ноутов.</p>
+                        </div>
+                    </div>
+
+                    <div class="contw">
+                        <div class="cont-onee">
+                            <h4>Ирина</h4>
+                            <p>г.Бишкек</p>
+                        </div>
+                        <div class="cont">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <p>Хорошее шустрое железо за свои деньги. Матрица ТН среднего уровня, не совсем дно, но и не ips. А в целом обычный ноутбук, чуть громоздко выглядит. Можно дополнительно установить 2.5" диск сата (ssd или hdd), а также расширить память.</p>
+                        </div>
+                    </div>
+
+                    <div class="contw">
+                        <div class="cont-onee">
+                            <h4>Андрей</h4>
+                            <p>г.Бишкек</p>
+                        </div>
+                        <div class="cont">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            <p>Ноутбук хороший, но после обновления стал издавать при работе сильный шум, отнёс в магазин, затем недельная проверка и в результате вентилятор заработал как надо. Пока данным ноутбуком доволен</p>
+                        </div>
+                    </div>
+
+                    <div class="contw">
+                        <div class="cont-onee">
+                            <h4>Дмитрий</h4>
+                            <p>г.Бишкек</p>
+                        </div>
+                        <div class="cont">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <p>Покупал сыну (15 лет) на день рожденья для учебы и программирования. Выбор пал на Lenovo, так как сам работаю уже два года на ноуте этого бренде по рекомендации нашего IT отдела и очень доволен.
+                                Сразу договрились с сыном, что эта модель не годится для игр, чтобы не было лишних иллюзий. Для своей цены очень приемлимый вариант, ребенок доволен.</p>
+                        </div>
+                    </div>
+
+                    <div class="contw">
+                        <div class="cont-onee">
+                            <h4>Владимир</h4>
+                            <p>г.Бишкек</p>
+                        </div>
+                        <div class="cont">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <p>Очень шустрый компьютер за счет сочетания быстрого бюджетного процессора с неплохой набортной видеокартой и очень быстрого Nvme m.2 ssd какопителя.
+                                Вот только качество и цветопередача экрана оставляет желать лучшего: плохая- синюшная цветопередача и маленькие углы обзора.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </section>
+
+
+    <footer id="contacts">
+        <div class="footer">
+            <div class="button">
+                <h1>Онлайн заявка</h1>
+                <button href="#" onclick="showModal1(3)">Записаться</button>
+            </div>
+            <div class="text">
+                <h1>Навигация</h1>
+                <a href="#"><p>Портфолио</p></a>
+                <a href="#"><p>Магазин</p></a>
+                <a href="#"><p>О нас</p></a>
+                <a href="#"><p>Блог</p></a>
+                <a href="#"><p>Сервис</p></a>
+            </div>
+            <div class="text">
+                <h1>Контакты</h1>
+                <p>(+996 772) 000-562</p>
+                <p>isoft@gmail.com</p>
+            </div>
+            <div class="text">
+                <h1>Соц сети</h1>
+                <a href="#"><p><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</p></a>
+                <a href="#"><p><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</p></a>
+                <a href="#"><p><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</p></a>
+            </div>
+        </div>
+
+        <div class="modalc modal-3">
+            <div class="modal-window">
+                <div class="modal-header">
+                    <div class="close"onclick="closeModal1(3)">&times;</div>
+                </div>
+                <div class="modal-body">
+                    <div class="goovrrrr">
+                        <h1>ПОДАЧА ЗАЯВЛЕНИЯ НА ОБУЧЕНИЕ</h1>
+                        <div class="containerrrtt">
+                            <form action="https://formspree.io/f/xeqnojjv" method="POST" enctype="multipart/form-data" id="my-form">
+                        
+                              <div class="form-group">
+                                <label for="firstName">Ваше имя</label>
+                                <input type="text" id="firstName" name="firstName">
+                              </div>
+                        
+                              <div class="form-group">
+                                <label for="latsName">Ваша почта</label>
+                                <input type="text" id="lastName" name="lastName">
+                              </div>
+
+                              <div class="form-group">
+                                <label for="massage">Ваше сообщение</label>
+                                <textarea name="massage" id="massage" cols="10" rows="1"></textarea>
+                              </div>
+                        
+                              <button type="submit">Отправить</button>
+                            </form>
+                        </div>
+                        <div id="status"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        function showModal1(id){
+            document.getElementsByClassName(`modal-${id}`)[0].classList.add('actvie')
+        }
+        function closeModal1(id){
+            document.getElementsByClassName(`modal-${id}`)[0].classList.remove('actvie')
+        }
+    </script>
+
+
+
+    <script>
+        const accordion = document.getElementsByClassName
+        ('contentBx');
+
+        for (i = 0; i<accordion.length; i++ ){
+            accordion[i].addEventListener('click', function(){
+                this.classList.toggle('active')
+            })
+        }
+    </script>
+
+
+<script> 
+    function clickimg(smallIg){ 
+        var fullImg = document.getElementById("imagebox"); 
+        fullImg.src = smallIg.src 
+    } 
+</script>
+
+
+<script> 
+    const navBer = document.querySelector(".navber"); 
+    const menu = document.querySelector(".menu-lie"); 
+    const menuBer = document.querySelector(".menu-berw"); 
+    const cancelBer = document.querySelector(".cancel-berw"); 
+
+    menuBer.onclick = () =>{ 
+        menu.classList.add("sticve"); 
+        menuBer.classList.add("hide"); 
+    } 
+    cancelBer.onclick = () =>{ 
+        menu.classList.remove("sticve"); 
+        menuBer.classList.remove("hide"); 
+    } 
+
+    window.onscroll = () => {
+        this.scrollY > 20 ? navBer.classList.add("actve") : navBer.classList.remove("actve");
+    }
+</script>
+</body>
+</html>

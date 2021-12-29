@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="short icon" href="./img/isoft.png">
+    <link rel="stylesheet" href="css/mail.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navber"> 
+            <div class="content"> 
+                <ul class="menu-lie"> 
+                    <div class="icon cancel-berw"> 
+                        <i class="fa fa-times" aria-hidden="true"></i> 
+                    </div> 
+                    <li><a href="#home">Главная</a></li> 
+                    <li><a href="#Portfolio">Портфолио</a></li> 
+                    <li><a href="#Shop">Магазин</a></li> 
+                    <li><a href="#About-Us">О нас</a></li> 
+                    <li><a href="#blog">Блог</a></li> 
+                    <li><a href="#Service">Сервис</a></li> 
+                    <li><a href="#Contacts">Контакты</a></li>
+                </ul>  
+                <div class="icon menu-berw"> 
+                    <i class="fa fa-align-left" aria-hidden="true"></i> 
+                </div> 
+                <div class="logo">
+                    <div class="textlogo">
+                        <h4>isoft</h4>
+                        <p>The first inclusive IT company</p>
+                    </div>
+                    <a href="#"><img src="./img/isoft.png" alt=""></a>
+                </div> 
+            </div> 
+        </nav>
+    </header>
+
+    <section class="wrapper">
+        <div class="wrapper-text">
+            <h1>ОФОРМИТЬ ЗАКАЗ</h1>
+            <p>ЗАПОЛНИТЕ ПОЖАЛУЙСТА ВАШИ ДАННЫЕ ДЛЯ ЗАКАЗА</p>
+        </div>
+        <div class="goov">
+            <div class="containerrrt">
+                <form action="https://formspree.io/f/xeqnojjv" method="POST" enctype="multipart/form-data" id="my-form">
+                    <div class="form-h2">
+                        <h2>ТИП ПЛАТЕЛЬЩИКА</h2>
+                        <div class="form-group">
+                            <label for="firstName">Выберите тип плательщика</label>
+                            <div class="select">
+                                <select id="firstName" name="firstName">
+                                    <option value="1">Физическое лицо</option>
+                                    <option value="2">Юридическое лицо</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-h2-block">
+                        <h2 class="text">ЛИЧНЫЕ ДАННЫЕ</h2>
+                        <div class="clos">
+                            <div class="form-group">
+                                <label for="firstName">Ф.И.О</label>
+                                <input type="text" id="firstName" name="firstName">
+                            </div>
+                            <div class="form-group">
+                                <label for="latsName">E.Mail</label>
+                                <input type="email" id="lastName" name="lastName">
+                            </div>
+                            <div class="form-group">
+                                <label for="firstName">Телефон</label>
+                                <input type="text" id="firstName" name="firstName">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-h2-block">
+                        <h2 class="text">ДАННЫЕ ДЛЯ ДОСТАВКИ</h2>
+                        <div class="clos">
+                            <div class="form-group">
+                                <label for="firstName">Город</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Кыргызстан, Бишкек">
+                            </div>
+                            <div class="form-group">
+                                <label for="firstName">Адрес доставки</label>
+                                <input type="text" id="firstName" name="firstName">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-h2">
+                        <h2>ДОСТАВКА</h2>
+                        <div class="form-group">
+                            <label for="firstName">Выберите тип плательщика</label>
+                            <div class="select">
+                                <select id="firstName" name="firstName">
+                                    <option value="1">Доставка курьером 100 сом</option>
+                                    <option value="2">Cамовывоз</option>
+                                </select>
+                            </div>
+                            <p>Доставка осуществляется в течение дня в удобное для вас время.</p>
+                        </div>
+                    </div>
+                  <button type="submit">Отправить</button>
+                </form>
+            </div>
+            <div id="status"></div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <footer id="contacts">
+        <div class="footer">
+            <div class="button">
+                <h1>Онлайн заявка</h1>
+                <button href="#" onclick="showModal1(1)">Записаться</button>
+            </div>
+            <div class="text">
+                <h1>Навигация</h1>
+                <a href="#"><p>Портфолио</p></a>
+                <a href="#"><p>Магазин</p></a>
+                <a href="#"><p>О нас</p></a>
+                <a href="#"><p>Блог</p></a>
+                <a href="#"><p>Сервис</p></a>
+            </div>
+            <div class="text">
+                <h1>Контакты</h1>
+                <p>(+996 772) 000-562</p>
+                <p>isoft@gmail.com</p>
+            </div>
+            <div class="text">
+                <h1>Соц сети</h1>
+                <a href="#"><p><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</p></a>
+                <a href="#"><p><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</p></a>
+                <a href="#"><p><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</p></a>
+            </div>
+        </div>
+
+        <div class="modalc modal-1">
+            <div class="modal-window">
+                <div class="modal-header">
+                    <div class="close"onclick="closeModal1(1)">&times;</div>
+                </div>
+                <div class="modal-body">
+                    <div class="goovrrrr">
+                        <h1>ПОДАЧА ЗАЯВЛЕНИЯ НА ОБУЧЕНИЕ</h1>
+                        <div class="containerrrtt">
+                            <form action="https://formspree.io/f/xeqnojjv" method="POST" enctype="multipart/form-data" id="my-form">
+                        
+                              <div class="form-group">
+                                <label for="firstName">Ваше имя</label>
+                                <input type="text" id="firstName" name="firstName">
+                              </div>
+                        
+                              <div class="form-group">
+                                <label for="latsName">Ваша почта</label>
+                                <input type="text" id="lastName" name="lastName">
+                              </div>
+
+                              <div class="form-group">
+                                <label for="massage">Ваше сообщение</label>
+                                <textarea name="massage" id="massage" cols="10" rows="1"></textarea>
+                              </div>
+                        
+                              <button type="submit">Отправить</button>
+                            </form>
+                        </div>
+                        <div id="status"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+        function showModal1(id){
+            document.getElementsByClassName(`modal-${id}`)[0].classList.add('actvie')
+        }
+        function closeModal1(id){
+            document.getElementsByClassName(`modal-${id}`)[0].classList.remove('actvie')
+        }
+    </script>
+
+    <script> 
+        const navBer = document.querySelector(".navber"); 
+        const menu = document.querySelector(".menu-lie"); 
+        const menuBer = document.querySelector(".menu-berw"); 
+        const cancelBer = document.querySelector(".cancel-berw"); 
+
+        menuBer.onclick = () =>{ 
+            menu.classList.add("sticve"); 
+            menuBer.classList.add("hide"); 
+        } 
+        cancelBer.onclick = () =>{ 
+            menu.classList.remove("sticve"); 
+            menuBer.classList.remove("hide"); 
+        } 
+
+        window.onscroll = () => {
+            this.scrollY > 20 ? navBer.classList.add("actve") : navBer.classList.remove("actve");
+        }
+    </script>
+</body>
+</html>

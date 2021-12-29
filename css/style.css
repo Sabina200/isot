@@ -1,0 +1,1353 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+.logooo{ 
+    position: fixed; 
+    z-index: 999999; 
+    background: #fff; 
+    width: 100%; 
+    height: 100%; 
+} 
+.logotip{ 
+    position: absolute; 
+    top: calc(50vh - 75px); 
+    left: calc(32vw - 75px); 
+    font-size: 5rem;
+} 
+.logotip{  
+    width: 14ch;  
+    margin-bottom: 10px;  
+    font-family: monospace;  
+    white-space: nowrap;  
+    overflow: hidden; 
+    animation: flashing-border 0.55s step-end infinite,   
+    printed-text 1s steps(21);  
+}
+.red{
+    color: #D83624;
+}
+
+
+
+.icon{ 
+    font-size: 23px; 
+    color: #000; 
+    cursor: pointer; 
+} 
+.icon.cancel-berw{ 
+    position: absolute; 
+    top: 20px; 
+    right: 30px; 
+} 
+.navber{ 
+    position: fixed;
+    width: 100%; 
+    z-index: 5; 
+    padding: 5px 0; 
+    transition: all .3s ease;
+    background: #fff;
+}
+.navber.actve{ 
+    transition: all .3s ease;
+    padding: 20px 0;
+}
+.navber .content{ 
+    max-width: 1150px; 
+    margin: auto; 
+    padding: 0 40px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+.navber .content .menu-lie{ 
+    display: block;
+    position: fixed;
+    text-align: left;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    max-width: 300px;
+    height: 100vh;
+    padding: 30px 40px;
+    background: #fff;
+    transition: all .3s ease;
+}
+.navber .content .menu-lie::before{ 
+    position: absolute;
+    width: 100%;
+    content: "";
+    top: 91%;
+    left: 0;
+    border-top: 2px solid #D83624;
+}
+.navber .content .menu-lie.sticve{ 
+    left: 0%;
+}
+.navber .content .logo{
+    display: flex;
+    align-items: center;
+}
+.navber .content .logo img{ 
+    width: 81px; 
+    margin-left: 1rem;
+}
+.navber .content .menu-lie li{
+    margin-top: 35px;
+}
+.textlogo h4{
+    font-size: 20px;
+}
+.textlogo p{
+    font-size: 13px;
+    color: #393939;
+}
+.navber .content .menu-lie li a{  
+    font-size: 19px; 
+    font-weight: 400; 
+    color: rgb(0, 0, 0); 
+}
+
+
+
+.banne{
+    height: 100vh;
+}
+.banne .text{
+    text-align: right;
+    padding: 13rem 25px 15rem 48rem;
+}
+.banne .text h1{
+    font-size: 34px;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.banne .text a{
+    font-size: 15px;
+    background: #fff;
+    color: #D83624;
+    padding: 10px 20px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+.Portfolio{
+    max-width: 1190px;
+    padding: 0 30px;
+    margin: auto;
+    margin-top: 90px;
+}
+.Portfolio .Portfolio-text h1{
+    position: relative;
+    font-weight: 800;
+    font-size: 35px;
+    color: #fff;
+}
+.Portfolio .Portfolio-text h1::before{
+    content: '';
+    position: absolute;
+    background: #FF0000;
+    width: 25%;
+    bottom: -5px;
+    left: -8%;
+    border-radius: 10px;
+    height: 60px;
+    z-index: -1;
+}
+.About-Us{
+    max-width: 1190px;
+    padding: 0 30px;
+    margin: auto;
+    margin-top: 90px;
+}
+.About-Us .About-Us-text h1{
+    position: relative;
+    font-weight: 800;
+    font-size: 35px;
+    color: #fff;
+}
+.About-Us .About-Us-text h1::before{
+    content: '';
+    position: absolute;
+    background: #FF0000;
+    width: 17%;
+    bottom: -5px;
+    left: -8%;
+    border-radius: 10px;
+    height: 60px;
+    z-index: -1;
+}
+.blog{
+    max-width: 1190px;
+    padding: 0 30px;
+    margin: auto;
+    margin-top: 90px;
+}
+.blog .blog-text h1{
+    position: relative;
+    font-weight: 800;
+    font-size: 35px;
+    color: #fff;
+}
+.blog .blog-text h1::before{
+    content: '';
+    position: absolute;
+    background: #FF0000;
+    width: 32%;
+    bottom: -5px;
+    left: -8%;
+    border-radius: 10px;
+    height: 60px;
+    z-index: -1;
+}
+.portfolio-one{
+    padding-top: 70px;
+    text-align: center;
+    max-width: 1190px;
+    margin: auto;
+}
+.portfolio-one a{
+    background: #FF0000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 40px;
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+.portfolio-one a:hover{
+    background: #000000;
+    color: #fff;
+    transition: all .4s ease;
+}
+.pooot-img{
+    margin-bottom: 2rem;
+}
+.pooot-img img{
+    height: 25rem;
+    margin: 20px 20px;
+}
+
+
+.shop .shop-text h1::before{
+    content: '';
+    position: absolute;
+    background: #FF0000;
+    width: 21%;
+    bottom: -5px;
+    left: -8%;
+    border-radius: 10px;
+    height: 60px;
+    z-index: -1;
+}
+.shop .shop-text h1{
+    position: relative;
+    font-weight: 800;
+    font-size: 35px;
+    color: #fff;
+}
+.shop{
+    max-width: 1190px;
+    padding: 0 30px;
+    margin: auto;
+    margin-top: 90px;
+}
+.shop .contaier{
+    max-width: 1190px;
+    margin: auto;
+    padding: 25px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.shop .contaier .care{
+    text-align: center;
+    padding: 15px 0px;
+    padding-top: 2rem;
+    width: 350px;
+    height: 400px;
+    background: #fff;
+    filter: drop-shadow(9px 8px 9px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    margin: 15px 10px;
+}
+
+.shop .contaier .care img{
+    width: 49%;
+    margin: auto;
+}
+.shop .contaier .care .info{
+    text-align: left;
+    margin: auto;
+}
+.shop .contaier .care .info h1{
+    font-size: 18px;
+    padding: 27px 32px 17px 13px;
+}
+.shop .contaier .care .info .icon{
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    margin-bottom: 20px;
+    margin-left: 1rem;
+}
+.shop .contaier .care .info .icon .star{
+    margin-right: 20px;
+}
+.shop .contaier .care .info .icon .fa{
+    color: #F3BA2B;
+    font-size: 18px;
+    cursor: pointer;
+}
+.shop .contaier .care .info .icon p{
+    font-size: 15px;
+    color: #D6D8E5;
+}
+.shop .contaier .care .info .icon-text{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+.shop .contaier .care .info .icon-text::before{
+    content: '';
+    position: absolute;
+    left: 16px;
+    top: 0;
+    width: 91%;
+    border-bottom: 1px solid #D6D8E5;
+}
+.shop .contaier .care .info .icon-text .user .fa{
+    color: #FF0000;
+    margin-right: 6px;
+    font-size: 20px;
+}
+.shop .contaier .care .info .icon-text .user p{
+    margin-left: 2px 2rem;
+}
+.shop .contaier .care .info .icon-text .user{
+    color: #D6D8E5;
+}
+.shop .contaier .care .info .icon-text .button{
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+.shop .contaier .care .info .icon-text .button p{
+    color: #FF0000;
+    margin-right: 10px;
+}
+.shop .contaier .care .info .icon-text .button a{
+    color: #fff;
+    background: #FF0000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-right: 43px;
+}
+
+.shop .contaier .care .info .icon-text .button a:hover{
+    color: rgb(255, 255, 255);
+    background: #000000;
+    padding: 10px 20px;
+    transition: 1s;
+}
+#menu{ 
+    text-align: center; 
+    width: 1000px; 
+    margin: 50px auto; 
+    margin-top: 40px; 
+    margin-bottom: 60px; 
+} 
+#menu li{ 
+    display: inline-flex; 
+} 
+#menu li .active{ 
+    color: #FF0000; 
+} 
+#menu li a{ 
+    padding: 4px 20px ; 
+    font-size: 25px; 
+    font-weight: 500; 
+    color: #000; 
+    transition: all .3s ease; 
+} 
+#menu li a:hover{ 
+    color: #FF0000; 
+    transition: all .3s ease; 
+}
+
+
+.connn-text{
+    text-align: center;
+    margin-top: 95px;
+    padding: 0 30px;
+}
+.connn-text p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+.tier{
+    padding-top: 70px;
+}
+.max-text{
+    text-align: center;
+    max-width: 1190px;
+    margin: auto;
+    padding: 20px 0;
+}
+.max-text h1{
+    margin-bottom: 15px;
+    color: #FF0000;
+}
+.max-text p{
+    font-size: 17px;
+}
+.contaien{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contaien .card img{
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: contain;
+}
+.contaien .card{
+    width: 346px;
+    padding: 25px 25px;
+    border: none;
+}
+.contaien .card .info{
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+.contaien .card .info h1{
+    font-size: 20px;
+}
+.contaien .card .info::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, #fff);
+}
+.contaien .card.active .info::before{
+    display: none;
+}
+.contaien .card .red{
+    padding: 10px 0;
+    color: #D6D8E5;
+}
+.contaien .card a h1{
+    font-weight: 600;
+    color: #000;
+    font-size: 25px;
+    padding: 10px 0 15px 0;
+}
+.contaien .card a p{
+    color: #000;
+    font-size: 18px;
+    padding: 0 0 15px 0;
+}
+.contaien .card a .card-p{
+    color: #000;
+    font-size: 18px;
+    padding: 0;
+}
+.contaien .card a .card-p.bottom{
+    font-size: 18px;
+    padding: 0 0 15px 0;
+}
+.contaien .card .button{
+    color: #00d30b;
+    font-weight: 700;
+    font-size: 18px;
+}
+.contaien .card .more{
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    background: #000;
+    margin-top: 15px;
+    cursor: pointer;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 800;
+}
+.contaien .card.active .info{
+    height: auto;
+}
+.contaien .card.active .more{
+    background: #FF0000;
+}
+.contaien .card .more::before{
+    content: 'Подробнее...';
+}
+.contaien .card.active .more::before{
+    content: 'Меньше';
+}
+.box .btnx{
+    padding: .7rem 2rem;
+    background: #FF0000;
+    border: none;
+    color: #fff;
+    margin: auto;
+    display: block;
+    font-size: 1.3rem;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+    border-radius: 10px;
+}
+.box .btnx:hover{
+    opacity: .8;
+}
+.contaien .col{
+    display: none;
+}
+
+
+
+.Service{
+    max-width: 1190px;
+    padding: 0 30px;
+    margin: auto;
+    margin-top: 90px;
+}
+.Service .Service-text h1{
+    position: relative;
+    font-weight: 800;
+    font-size: 35px;
+    color: #fff;
+}
+.Service .Service-text h1::before{
+    content: '';
+    position: absolute;
+    background: #FF0000;
+    width: 20%;
+    bottom: -5px;
+    left: -8%;
+    border-radius: 10px;
+    height: 60px;
+    z-index: -1;
+}
+.Service .text{
+    margin-top: 90px;
+    text-align: center;
+}
+.Service .text h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: #FF0000;
+    margin-bottom: 10px;
+}
+.Service .text p{
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 15px;
+}
+.Service .contaien{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Service .contaien .card img,
+.Service .contaien .card_ber img{
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: contain;
+}
+.Service .contaien .card{
+    width: 350px;
+    padding: 25px 25px;
+    border: none;
+}
+.Service .contaien .card_ber{
+    width: 350px;
+    padding: 25px 25px;
+    border: none;
+    height: 360px;
+}
+.Service .contaien .card .info{
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+.Service .contaien .card .info::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, #fff);
+}
+.Service .contaien .card.active .info::before{
+    display: none;
+}
+.Service .contaien .card .red{
+    padding: 10px 0;
+    color: #FF0000;
+}
+.Service .contaien .card a h1,
+.Service .contaien .card_ber a h1{
+    font-weight: 600;
+    color: #000;
+    font-size: 20px;
+    padding: 10px 0 15px 0;
+}
+.Service .contaien .card a p{
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 0 15px 0;
+}
+.Service .contaien .card .button,
+.Service .contaien .card_ber .button{
+    color: #00d30b;
+    font-weight: 700;
+    font-size: 15px;
+    padding-bottom: 3rem;
+}
+.Service .contaien .card .more{
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    background: #000;
+    margin-top: 15px;
+    cursor: pointer;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 800;
+}
+.Service .contaien .card.active .info{
+    height: auto;
+}
+.Service .contaien .card.active .more{
+    background: #FF0000;
+}
+.Service .contaien .card .more::before{
+    content: 'Подробнее...';
+}
+.Service .contaien .card.active .more::before{
+    content: 'Меньше';
+}
+
+
+footer{
+    background: #FBECEC;
+}
+.footer{
+    width: 1150px;
+    margin: auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 90px;
+}
+.footer .text{
+    padding: 40px 15px;
+    margin-left: 150px;
+}
+.footer .text h1{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #382626;
+}
+.footer .text p{
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: #38262680;
+}
+.footer .text p i{
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.footer .button{
+    padding: 40px 15px;
+}
+.footer .button h1{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: #382626;
+}
+.footer .button button{
+    border: none;
+    cursor: pointer;
+    font-size: 19px;
+    padding: 15px 35px;
+    background: #FF0000;
+    color: #fff;
+    border-radius: 10px;
+}
+ 
+.containerrrtt{
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.modalc{
+    position: fixed;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+    transition: all .3s ease;
+}
+.modalc.actvie{
+    z-index: 999;
+    pointer-events: auto;
+    opacity: 1;
+    top: 0;
+}
+.modalc .modal-window{
+    background: #fff;
+    width: 40rem;
+}
+.modalc .modal-header,
+.modalc .modal-body{
+    margin: 2rem;
+}
+.modalc .modal-header{
+    margin-left: 92vh;
+    margin-top: 0rem;
+}
+.modalc .modal-header .close{
+    font-size: 3rem;
+    cursor: pointer;
+}
+.modalc .form-group {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.modalc .form-group input,
+.modalc .form-group textarea {
+    outline: none;
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid rgba(128, 128, 128, 0.199);
+    margin-top: 5px;
+}
+.modalc textarea {
+    resize: vertical;
+}
+.modalc button[type="submit"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    border: 1px solid #000;
+    background: none;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease background-color;
+}
+.modalc button[type="submit"]:hover {
+    background-color: #FF0000;
+    color: rgb(255, 255, 255);
+    border: 1px solid #FF0000;
+}
+.modalc #status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+.modalc #status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+}
+.modalc #status.error {
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+}
+
+.goovrrrr h1{
+    width: 470px;
+    font-size: 27px;
+    margin: auto;
+}  
+.goovrrrr{
+    margin: auto;
+}
+.goovrrrr h2{
+    color: #FF0000;
+    width: 22rem;
+}
+.goovrrrr p{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 30px 0;
+}
+.btn{
+    padding: 18px 30px;
+    background: #ffffff;
+    border: 1px solid #000;
+    transition: .2s;
+    margin-right: 15px;
+    border-radius: 5px;
+    color: rgb(34, 34, 34);
+    font-weight: 700;
+    font-size: 18px;
+}
+.btn:hover{
+    transition: all .3s;
+    border: 1px solid #000000;
+    background: #000000;
+    color: #fff;
+}
+ 
+ 
+@media (max-width: 1230px){
+    .footer{
+        width: 91%;
+    }
+    .footer .text{
+        margin-right: 60px;
+    }
+}
+@media (max-width: 1180px){
+    .banne .text{
+        padding: 13rem 25px 10rem 40rem;
+    }
+}
+@media (max-width: 1100px){
+    .logotip {
+        left: calc(28vw - 75px);
+        font-size: 5rem;
+    }
+}
+@media (max-width: 1040px){
+    .banne .text{
+        padding: 13rem 25px 10rem 20rem;
+    }
+    #menu {
+        width: 100%;
+    }
+}
+@media (max-width: 1000px){
+    .logotip {
+        left: calc(27vw - 75px);
+    }
+}
+@media (max-width: 900px){
+    .logotip {
+        left: calc(23vw - 75px);
+    }
+    .navber .content .menu-lie{
+        height: 90vh;
+    }
+    .navber .content .menu-lie::before{
+        top: 98%;
+    }
+    .banne .text{
+        padding: 13rem 25px 10rem 21rem;
+    }
+    .banne .text h1{
+        width: 100%;
+    }
+    .Portfolio .Portfolio-text h1::before{
+        width: 34%;
+        bottom: -10px;
+    }
+    .shop .shop-text h1::before{
+        width: 27%;
+        bottom: -10px;
+    }
+    .About-Us .About-Us-text h1::before{
+        width: 22%;
+        bottom: -10px;
+    }
+    .blog .blog-text h1::before{
+        width: 43%;
+        bottom: -10px;
+    }
+    .Service .Service-text h1::before{
+        width: 25%;
+        bottom: -10px;
+    }
+    .contaien .card{
+        width: 300px;
+    }
+    .footer{
+        width: 91%;
+        display: block;
+    }
+    .footer .button{
+        margin-left: 100px;
+    }
+    .footer .button h1{
+        font-size: 26px;
+    }
+    .footer .text{
+        margin-right: 60px;
+        margin-left: 100px;
+    }
+    .footer .text h1{
+        font-size: 26px;
+    }
+    .footer .text p{
+        font-size: 20px;
+    }
+}
+@media (max-width: 885px){
+    .logotip{
+        top: calc(56vh - 75px);
+        left: calc(30vw - 75px);
+        font-size: 4rem;
+    }
+    .footer{
+        width: auto;
+    }
+}
+@media (max-width: 860px){
+    .logotip{
+        left: calc(29vw - 75px);
+    }
+    .banne .text{
+        padding: 13rem 25px 10rem 10rem;
+    }
+}
+@media (max-width: 828px){
+    .Portfolio .Portfolio-text h1::before{
+        width: 36%;
+    }
+    .shop .shop-text h1::before{
+        width: 30%;
+    }
+    .About-Us .About-Us-text h1::before{
+        width: 24%;
+    }
+    .blog .blog-text h1::before{
+        width: 46%;
+    }
+    .Service .Service-text h1::before{
+        width: 30%;
+    }
+}
+@media (max-width: 780px){
+    .logotip{
+        left: calc(35vw - 75px);
+        font-size: 3rem;
+    }
+    .Portfolio .Portfolio-text h1::before{
+        width: 40%;
+    }
+    .shop .shop-text h1::before{
+        width: 32%;
+    }
+    .blog .blog-text h1::before{
+        width: 50%;
+    }
+}
+@media (max-width: 738px){
+    .Portfolio .Portfolio-text h1::before{
+        width: 40%;
+    }
+    .shop .shop-text h1::before{
+        width: 34%;
+    }
+    .About-Us .About-Us-text h1::before{
+        width: 26%;
+    }
+    .blog .blog-text h1::before{
+        width: 52%;
+    }
+}
+@media (max-width: 670px){
+    .logotip{
+        left: calc(34vw - 75px);
+    }
+    .footer .button{
+        display: none;
+    }
+}
+@media (max-width: 660px){
+    .logotip{
+        left: calc(32vw - 75px);
+    }
+    .Portfolio .Portfolio-text h1::before{
+        width: 45%;
+    }
+    .shop .shop-text h1::before{
+        width: 38%;
+    }
+    .About-Us .About-Us-text h1::before{
+        width: 30%;
+    }
+    .blog .blog-text h1::before{
+        width: 60%;
+    }
+    .Service .Service-text h1::before{
+        width: 35%;
+    }
+}
+@media (max-width: 600px){
+    .Portfolio .Portfolio-text h1{
+        font-size: 26px;
+    }
+    .Portfolio .Portfolio-text h1::before{
+        width: 40%;
+        bottom: -14px;
+    }
+    .shop .shop-text h1{
+        font-size: 26px;
+    }
+    .shop .shop-text h1::before{
+        width: 35%;
+        bottom: -14px;
+    }
+    .About-Us .About-Us-text h1{
+        font-size: 26px;
+    }
+    .About-Us .About-Us-text h1::before{
+        width: 30%;
+        bottom: -14px;
+    }
+    .blog .blog-text h1{
+        font-size: 26px;
+    }
+    .blog .blog-text h1::before{
+        width: 50%;
+        bottom: -14px;
+    }
+    .Service .Service-text h1{
+        font-size: 26px;
+    }
+    .Service .Service-text h1::before{
+        width: 30%;
+        bottom: -14px;
+    }
+    .max-text h1{
+        font-size: 20px;
+    }
+    .max-text p{
+        font-size: 15px;
+    }
+    #menu li a {
+        padding: 4px 10px;
+        font-size: 15px;
+    }
+    .contaien .card .more {
+        font-size: 10px;
+    }
+    .box .btnx{
+        font-size: 15px;
+    }
+}
+@media (max-width: 533px){
+    .logotip{
+        left: calc(28vw - 75px);
+    }
+    .banne .text{
+        padding: 13rem 25px 10rem 3rem;
+    }
+    .banne .text h1{
+        font-size: 30px;
+    }
+}
+@media (max-width: 515px){
+    .Portfolio .Portfolio-text h1::before{
+        width: 45%;
+    }
+    .shop .shop-text h1::before{
+        width: 37%;
+    }
+    .About-Us .About-Us-text h1::before{
+        width: 30%;
+    }
+    .blog .blog-text h1::before{
+        width: 55%;
+    }
+    .Service .Service-text h1::before{
+        width: 35%;
+    }
+}
+@media (max-width: 450px){
+    .logotip{
+        top: calc(58vh - 75px);
+        left: calc(32vw - 75px);
+        font-size: 2.5rem;
+    }
+    .Portfolio .Portfolio-text h1::before{
+        width: 53%;
+        left: -10%;
+    }
+    .shop .shop-text h1::before{
+        width: 45%;
+        left: -10%;
+    }
+    .About-Us .About-Us-text h1::before{
+        width: 35%;
+        left: -10%;
+    }
+    .blog .blog-text h1::before{
+        width: 68%;
+        left: -10%;
+    }
+    .Service .Service-text h1::before{
+        width: 40%;
+        left: -10%;
+    }
+    .portfolio-one{
+        padding-top: 60px;
+    }
+    .connn-text{
+        margin-top: 60px;
+    }
+    .connn-text p{
+        font-size: 16px;
+    }
+    .tier {
+        padding-top: 60px;
+    }
+    .Service .text{
+        margin-top: 60px;
+    }
+    .Service .text h1{
+        font-size: 23px;
+    }
+    .Service .text p {
+        font-size: 15px;
+    }
+    #menu li a{
+        padding: 4px 7px;
+    }
+}
+@media (max-width: 414px){
+    .logotip{
+        left: calc(37vw - 75px);
+        font-size: 2rem;
+    }
+    .shop .contaier .care .info .icon-text .button a{
+        margin-right: 20px;
+    }
+}
+@media (max-width: 400px){
+    .logotip{
+        left: calc(35vw - 75px);
+    }
+    .Portfolio .Portfolio-text h1::before{
+        width: 60%;
+        left: -12%;
+    }
+    .shop .shop-text h1::before{
+        width: 50%;
+        left: -12%;
+    }
+    .About-Us .About-Us-text h1::before{
+        width: 40%;
+        left: -12%;
+    }
+    .blog .blog-text h1::before{
+        width: 80%;
+        left: -12%;
+    }
+    .Service .Service-text h1::before{
+        width: 48%;
+        left: -12%;
+    }
+    .footer .text{
+        margin-left: 60px;
+    }
+    .shop .contaier .care .info .icon-text .user{
+        display: none;
+    }
+}
+@media (max-width: 390px){
+    .pooot-img img {
+        height: 15rem;
+    }
+}
+@media (max-width: 380px){
+    .navber .content .logo img{
+        width: 50px;
+    }
+    .textlogo p{
+        font-size: 6px;
+    }
+    .footer .text h1{
+        font-size: 25px;
+    }
+    .footer .text p{
+        font-size: 18px;
+    }
+}
+@media (max-width: 368px){
+    .Portfolio .Portfolio-text h1{
+        font-size: 23px;
+    }
+    .Portfolio .Portfolio-text h1::before{
+        width: 60%;
+        bottom: -16px;
+    }
+    .shop .shop-text h1{
+        font-size: 23px;
+    }
+    .shop .shop-text h1::before{
+        width: 50%;
+        bottom: -16px;
+    }
+    .About-Us .About-Us-text h1{
+        font-size: 23px;
+    }
+    .About-Us .About-Us-text h1::before{
+        width: 40%;
+        bottom: -16px;
+    }
+    .blog .blog-text h1{
+        font-size: 23px;
+    }
+    .blog .blog-text h1::before{
+        width: 80%;
+        bottom: -16px;
+    }
+    .Service .Service-text h1{
+        font-size: 23px;
+    }
+    .Service .Service-text h1::before{
+        width: 48%;
+        bottom: -16px;
+    }
+    .navber .content .menu-lie{
+        height: 90vh;
+        left: -140%;
+        max-width: 287px;
+    }
+    .navber .content .logo img{
+        width: 50px;
+    }
+    .textlogo p{
+        font-size: 6px;
+    }
+    .banne .text h1{
+        font-size: 25px;
+    }
+    .footer .text p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 340px){
+    .Portfolio .Portfolio-text h1::before{
+        width: 65%;
+        left: -15%;
+    }
+    .shop .shop-text h1::before{
+        width: 55%;
+        left: -15%;
+    }
+    .About-Us .About-Us-text h1::before{
+        width: 45%;
+        left: -15%;
+    }
+    .blog .blog-text h1::before{
+        width: 85%;
+        left: -15%;
+    }
+    .Service .Service-text h1::before{
+        width: 50%;
+        left: -15%;
+    }
+    .navber .content .menu-lie{
+        max-width: 255px;
+    }
+    .contaien .card{
+        width: 270px;
+    }
+}
+@media (max-width: 326px){
+    .shop .contaier .care .info .icon-text .button a{
+        margin-right: 0;
+    }
+    .shop .contaier .care{
+        height: 340px;
+    }
+    .footer{
+        margin-top: 15px;
+    }
+    .footer .text{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@keyframes flashing-border{  
+    0%{  
+        border: none;  
+    }  
+    50%{  
+        border: none;  
+    }  
+    100%{  
+        border: none;  
+    }  
+}  
+  
+@keyframes printed-text{  
+    from{  
+        width: 0;  
+    }  
+}

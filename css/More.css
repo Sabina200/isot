@@ -1,0 +1,434 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+.logotip{ 
+    position: absolute; 
+    top: calc(50vh - 75px); 
+    left: calc(32vw - 75px); 
+    font-size: 5rem;
+} 
+.logotip{  
+    width: 14ch;  
+    margin-bottom: 10px;  
+    font-family: monospace;  
+    white-space: nowrap;  
+    overflow: hidden; 
+    animation: flashing-border 0.55s step-end infinite,   
+    printed-text 1s steps(21);  
+}
+.red{
+    color: #D83624;
+}
+
+
+
+.icon{ 
+    font-size: 23px; 
+    color: #000; 
+    cursor: pointer; 
+} 
+.icon.cancel-berw{ 
+    position: absolute; 
+    top: 20px; 
+    right: 30px; 
+} 
+.navber{ 
+    position: fixed;
+    width: 100%; 
+    z-index: 5; 
+    padding: 5px 0; 
+    transition: all .3s ease;
+    background: #fff;
+}
+.navber.actve{ 
+    transition: all .3s ease;
+    padding: 20px 0;
+}
+.navber .content{ 
+    max-width: 1150px; 
+    margin: auto; 
+    padding: 0 40px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+.navber .content .menu-lie{ 
+    display: block;
+    position: fixed;
+    text-align: left;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    max-width: 300px;
+    height: 100vh;
+    padding: 30px 40px;
+    background: #fff;
+    transition: all .3s ease;
+}
+.navber .content .menu-lie::before{ 
+    position: absolute;
+    width: 100%;
+    content: "";
+    top: 91%;
+    left: 0;
+    border-top: 2px solid #D83624;
+}
+.navber .content .menu-lie.sticve{ 
+    left: 0%;
+}
+.navber .content .logo{
+    display: flex;
+    align-items: center;
+}
+.navber .content .logo img{ 
+    width: 81px; 
+    margin-left: 1rem;
+}
+.navber .content .menu-lie li{
+    margin-top: 35px;
+}
+.textlogo h4{
+    font-size: 20px;
+}
+.textlogo p{
+    font-size: 13px;
+    color: #393939;
+}
+.navber .content .menu-lie li a{  
+    font-size: 19px; 
+    font-weight: 400; 
+    color: rgb(0, 0, 0); 
+}
+
+
+
+.wparrepp{
+    padding-top: 10rem;
+    max-width: 1000px;
+    margin: auto;
+}
+.contemt h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 3rem;
+}
+.wight{
+    font-weight: 700;
+    color: #000;
+}
+.wparrepp p{
+    font-size: 18px;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+.contentt-on h2{
+    margin-bottom: 1rem;
+}
+.contentt-on ul li{
+    list-style: auto;
+    line-height: 2rem;
+    margin-left: 1rem;
+}
+.imgare img{
+    width: 30rem;
+}
+.imgare p{
+    position: absolute;
+    top: 233%;
+    left: 23%;
+    font-size: 15px;
+    font-family: Rubik;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 150%;
+    color: #393939;
+}
+.contentt-onn{
+    padding-top: 2rem;
+}
+.contentt-onn h2{
+    margin-bottom: 1rem;
+}
+.contentt-onn ul li{
+    list-style: disc;
+    line-height: 2rem;
+    margin-left: 1rem;
+}
+.contentt-onn img{
+    width: 30rem;
+}
+.imgaree img{
+    width: 30rem;
+}
+.imgaree p{
+    position: absolute;
+    top: 546%;
+    left: 19%;
+    font-size: 15px;
+    font-family: Rubik;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 150%;
+    color: #393939;
+}
+
+.contentt-two p{
+    font-size: 18px;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}
+.imgareee img{
+    width: 30rem;
+}
+.imgareee p{
+    position: absolute;
+    top: 602%;
+    left: 23%;
+    font-size: 15px;
+    font-family: Rubik;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 150%;
+    color: #393939;
+}
+
+.imgareeee img{
+    width: 35rem;
+}
+.imgareeee p{
+    position: absolute;
+    top: 734%;
+    left: 25%;
+    font-size: 15px;
+    font-family: Rubik;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 150%;
+    color: #393939;
+}
+.imgareeeee img{
+    width: 35rem;
+}
+.imgareeeee p{
+    position: absolute;
+    top: 844%;
+    left: 25%;
+    font-size: 15px;
+    font-family: Rubik;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 150%;
+    color: #393939;
+}
+.imgareeeeeee img{
+    width: 35rem;
+}
+.imgareeeeeee p{
+    position: absolute;
+    top: 1002%;
+    left: 25%;
+    font-size: 15px;
+    font-family: Rubik;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 150%;
+    color: #393939;
+}
+.imgareeeeeeee img{
+    width: 35rem;
+}
+.imgareeeeeeee p{
+    position: absolute;
+    top: 1094%;
+    left: 31%;
+    font-size: 15px;
+    font-family: Rubik;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 150%;
+    color: #393939;
+}
+.imgareeeeeeee{
+    padding-bottom: 2rem;
+}
+.contentt-three ul li{
+    list-style: disc;
+    line-height: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width: 1483px){
+    .imgare p {
+        position: absolute;
+        top: 233%;
+        left: 27%;
+    }
+    .imgaree p {
+        top: 458%;
+        left: 24%;
+    }
+}
+@media (max-width: 1320px){
+    .imgare p {
+        left: 24%;
+    }
+    .imgaree p {
+        left: 22%;
+    }
+    .imgareeeeeeee p {
+        left: 28%;
+    }
+}
+
+@media (max-width: 1180px){
+    .wparrepp{
+        max-width: 900px;
+    }
+}
+@media (max-width: 1000px){
+    .wparrepp{
+        max-width: 800px;
+    }
+    .imgare p {
+        top: 294%;
+    }
+    .imgaree p {
+        top: 576%;
+    }
+    .imgareee p {
+        top: 761%;
+    }
+    .imgareeeee p {
+        top: 919%;
+        left: 29%;
+    }
+    .imgareeeeeeee p {
+        top: 1052%;
+        left: 31%;
+    }
+    .imgareeeeeee p {
+        top: 1253%;
+        left: 28%;
+    }
+    .imgareeeeeeee p {
+        top: 1364%;
+    }
+}
+@media (max-width: 952px){
+    .wparrepp{
+        max-width: 750px;
+    }
+    .imgare p {
+        top: 257%;
+    }
+    .imgaree p {
+        top: 509%;
+    }
+    .imgareee p {
+        top: 672%;
+    }
+    .imgareeee p {
+        top: 816%;
+        left: 29%;
+    }
+    .imgareeeee p {
+        top: 933%;
+        left: 29%;
+    }
+    .imgareeeeeee p {
+        top: 1119%;
+        left: 29%;
+    }
+    .imgareeeeeeee p {
+        top: 1218%;
+        left: 34%;
+    }
+}
+
+@media (max-width: 900px){
+    
+}
+
+@media (max-width: 885px){
+    
+}
+
+@media (max-width: 860px){
+    
+}
+
+@media (max-width: 828px){
+    
+}
+
+@media (max-width: 780px){
+    
+}
+
+@media (max-width: 738px){
+    
+}
+
+@media (max-width: 670px){
+    
+}
+
+@media (max-width: 660px){
+    
+}
+
+@media (max-width: 600px){
+    
+}
+
+@media (max-width: 533px){
+    
+}
+
+@media (max-width: 515px){
+    
+}
+
+@media (max-width: 450px){
+    
+}
+
+@media (max-width: 414px){
+    
+}
+@media (max-width: 400px){
+    
+}
+
+@media (max-width: 390px){
+    
+}
+
+@media (max-width: 380px){
+    
+}
+
+@media (max-width: 368px){
+    
+}
+
+@media (max-width: 340px){
+
+}
+
+@media (max-width: 326px){
+
+}
