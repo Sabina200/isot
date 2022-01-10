@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <script src="./js/modernizr.custom.63321.js"></script>
 </head>
@@ -58,11 +59,11 @@
     </section>
 
     <section class="Portfolio" id="Portfolio">
-        <div class="Portfolio-text">
+        <div data-aos="fade-right" class="Portfolio-text">
             <h1>Портфолио</h1>
         </div>
         <div class="portfolio-one">
-            <div class="pooot-img">
+            <div data-aos="zoom-in" class="pooot-img">
                 <img src="./img/Rectangle 294.jpg" alt="">
                 <img src="./img/Rectangle 294 (1).jpg" alt="">
                 <img src="./img/Rectangle 294 (2).jpg" alt="">
@@ -78,7 +79,7 @@
         
     <section id="Shop"> 
         <div class="shop"> 
-            <div class="shop-text"> 
+            <div data-aos="fade-right" class="shop-text"> 
                 <h1>Магазин</h1> 
             </div> 
             <ul id="menu"> 
@@ -89,7 +90,7 @@
                 <li><a data-target="MSI" href="#portfolie">MSI</a></li> 
                 <li><a data-target="Acer" href="#portfolie">Acer, Packard</a></li> 
             </ul> 
-            <div class="contaier"> 
+            <div data-aos="zoom-in" class="contaier"> 
                 <div class="care Lenovo">
                     <img src="img/LENOVO001.png">
                     <div class="info"> 
@@ -737,20 +738,20 @@
 
 
     <section class="About-Us" id="About-Us">
-        <div class="About-Us-text">
+        <div data-aos="fade-right" class="About-Us-text">
             <h1>О нас</h1>
         </div>
-        <div class="connn-text">
+        <div data-aos="zoom-in" class="connn-text">
             <p>ОсОО "ИнклюзивСофт", является первой в стране инклюзивной IT-компанией, где помимо здоровых людей, работают люди с ограниченными возможностями здоровья (ЛОВЗ). В нашей компании трудовую и профессиональную реабилитацию проходят люди с ДЦП, колясочники, слабовидящие, слабослышащие, и с синдромом аутизма, выпускники IT Academy при КАРПОУ, Института электроники и телекоммуникаций при КГТУ, Колледжа экономики, дизайна и информационных технологий и т.д. Также по мере своих возможностей, наша компания оказывает поддержку и содействие в вопросах получения образования и трудоустройства ЛОВЗ, заботится об улучшении социально - экономического положения ЛОВЗ.</p>
         </div>
     </section>
 
     <section class="blog" id="blog">
-        <div class="blog-text">
+        <div data-aos="fade-right" class="blog-text">
             <h1>Новостной блог</h1>
         </div>
 
-        <div class="tier">
+        <div data-aos="zoom-in" class="tier">
             <div class="max-text">
                 <h1>ПРОГРАММИРОВАНИЕ</h1>
                 <p>Программирование – сложное направление диджитал. Понимая это, мы создали специальный раздел блога, в котором рассказываем о разных языках программирования, методах их использования и обучения выбранным направлениям разработки.</p>
@@ -916,7 +917,7 @@
 
 
     <section class="Service" id="Service">
-        <div class="Service-text">
+        <div data-aos="fade-right" class="Service-text">
             <h1>Сервис</h1>
         </div>
         <div class="text">
@@ -1034,7 +1035,11 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script>
+        AOS.init();
+      </script>
 
 
 
